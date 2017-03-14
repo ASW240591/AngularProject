@@ -1,0 +1,7 @@
+<!-- <span> 
+	<input type ="radio" ng-model="model" name="gender"  value="Male" >&nbsp;Male
+	<input type ="radio" ng-model="model" name="gender"  value="Female">&nbsp;Female
+</span> -->
+<span ng-repeat="response in listname">
+	<input type ="radio" ng-model="$parent.model" name={{fieldname}} id ={{fieldname}} value={{response}}>&nbsp;{{response}}&nbsp;&nbsp;
+</span>

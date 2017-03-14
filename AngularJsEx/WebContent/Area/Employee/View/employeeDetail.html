@@ -1,0 +1,39 @@
+<div class="panel-heading">
+	<center>{{pageName}}</center>
+</div>
+<div class="panel-body">
+	<div class="row">
+		<div class="col-md-12">
+			<fieldset>
+				<div class="col-md-3">First Name</div>
+				<div class="col-md-3">
+					<input type="text" ng-model="employee.firstName"
+						placeholder="firstname" class="form-control">
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="col-md-3">Last Name</div>
+				<div class="col-md-3">
+					<input type="text" ng-model="employee.lastName" placeholder="lastname"
+						class="form-control">
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="col-md-3">Gender</div>
+				<div class="col-md-3">
+					<my-radio model="employee.gender" listname="gender"
+						fieldame="Gender"></my-radio>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="col-md-3">Address</div>
+				<div class="col-md-3">
+					<input type="text" ng-model="employee.address">
+				</div>
+			</fieldset>
+		</div>
+	</div>
+</div>
+<div class="panel-footer">
+	<input type="button" class="btn btn-primary" ng-click="saveOrUpdateEmployee(employee)" value="Submit" ></input>
+</div>
